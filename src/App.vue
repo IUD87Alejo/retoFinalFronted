@@ -4,9 +4,7 @@
   <nav>
     <div class="nav-wrapper teal">
       <ul class="right hide-on-med-and-down" >
-        <li><router-link :to="{name: 'Login'}">Login</router-link></li>
-
-        <li><router-link :to="{name: 'Login'}">Login</router-link></li>
+        <li id="login"><router-link :to="{name: 'Login'}">Login</router-link></li>
       </ul>
     </div>
   </nav>

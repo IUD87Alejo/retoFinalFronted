@@ -1,7 +1,7 @@
 <template>
 <div >
   <h1 style="text-align:center;margin-bottom: 10PX;">Asignaturas</h1>
-  <div class="col-4">
+ <!-- <div class="col-4">
     <div class="form-group">
         <label for="docente">Semestre</label>
         <form @submit.prevent="iniciarSesion">
@@ -19,7 +19,7 @@
         </select>
         </form>
     </div>
-</div>
+</div>-->
 </div>
   <div style="display: flex;
     flex-wrap: wrap;
@@ -133,6 +133,7 @@ name:'ViewUser',
         const res = await this.axios.get('/courses');
       this.courses = res.data;
   
+      document.getElementById('login').innerHTML = '<a href="http://localhost:8080/login"  class="btn btn-danger" type="button" >Salir</button>';
 
       },
       async eliminar(id) {
